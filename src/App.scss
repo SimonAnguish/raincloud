@@ -1,0 +1,7 @@
+@import './styles/colors';
+
+body {
+    box-sizing: border-box;
+    border-top: 40px solid $morning-green;
+    padding: 45px;
+}

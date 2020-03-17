@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import './Form.scss'
 
 class Form extends Component {
     initialState = {
         name: '',
-        job: '',
+        genus: '',
+        species: '',
+        watering: '',
     }
 
     state = this.initialState
@@ -22,7 +25,7 @@ class Form extends Component {
     }
 
     render() {
-        const { name, job } = this.state
+        const { name, genus, species, watering } = this.state
 
         return (
             <form>
@@ -33,14 +36,28 @@ class Form extends Component {
                     id="name"
                     value={name}
                     onChange={this.handleChange} />
-                <label htmlFor="job">Job</label>
+                <label htmlFor="genus">Genus</label>
                 <input
                     type="text"
-                    name="job"
-                    id="job"
-                    value={job}
+                    name="genus"
+                    id="genus"
+                    value={genus}
                     onChange={this.handleChange} />
-                <input type="submit" value="Submit" onClick={this.submitForm} />
+                <label htmlFor="species">Species</label>
+                <input
+                    type="text"
+                    name="species"
+                    id="species"
+                    value={species}
+                    onChange={this.handleChange} />
+                <label htmlFor="watering">Water me every</label>
+                <input
+                        type="text"
+                        name="watering"
+                        id="watering"
+                        value={watering}
+                        onChange={this.handleChange} />
+                <button type="submit" value="Submit" onClick={this.submitForm}>Save</button>
             </form>
         )
     }

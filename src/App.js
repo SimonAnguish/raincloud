@@ -1,34 +1,35 @@
 import React, { Component } from 'react'
-import Table from './Table'
+import List from './List'
 import Form from './Form'
+import './App.scss'
 
 class App extends Component {
     state = {
-        characters: [],
+        cards: [],
     }
 
-    removeCharacter = index => {
-        const { characters } = this.state
+    removeCard = index => {
+        const { cards } = this.state
 
         this.setState({
-            characters: characters.filter((character, i) => {
+            cards: cards.filter((cards, i) => {
                 return i !== index
             }),
         })
     }
 
-    handleSubmit = character => {
+    handleSubmit = card => {
         this.setState({
-            characters: [...this.state.characters, character]
+            cards: [...this.state.cards, card]
         })
     }
 
     render() {
-        const { characters } = this.state
+        const { cards } = this.state
 
         return (
             <div className="App">
-                <Table characterData={characters} removeCharacter={this.removeCharacter} />
+                <List cardData={cards} removeCard={this.removeCard} />
                 <Form handleSubmit={this.handleSubmit} />
             </div>
         )
