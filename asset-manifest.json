@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/raincloud/static/css/main.fa92c0b1.chunk.css",
+    "main.js": "/raincloud/static/js/main.b95886fa.chunk.js",
+    "main.js.map": "/raincloud/static/js/main.b95886fa.chunk.js.map",
+    "runtime-main.js": "/raincloud/static/js/runtime-main.0678d56d.js",
+    "runtime-main.js.map": "/raincloud/static/js/runtime-main.0678d56d.js.map",
+    "static/js/2.b5a9818f.chunk.js": "/raincloud/static/js/2.b5a9818f.chunk.js",
+    "static/js/2.b5a9818f.chunk.js.map": "/raincloud/static/js/2.b5a9818f.chunk.js.map",
+    "index.html": "/raincloud/index.html",
+    "precache-manifest.5844f1f11d945de9c65c5288572f0ca3.js": "/raincloud/precache-manifest.5844f1f11d945de9c65c5288572f0ca3.js",
+    "service-worker.js": "/raincloud/service-worker.js",
+    "static/css/main.fa92c0b1.chunk.css.map": "/raincloud/static/css/main.fa92c0b1.chunk.css.map",
+    "static/js/2.b5a9818f.chunk.js.LICENSE.txt": "/raincloud/static/js/2.b5a9818f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0678d56d.js",
+    "static/js/2.b5a9818f.chunk.js",
+    "static/css/main.fa92c0b1.chunk.css",
+    "static/js/main.b95886fa.chunk.js"
+  ]
+}
