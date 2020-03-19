@@ -19,7 +19,8 @@ class Form extends Component {
         })
     }
 
-    submitForm = () => {
+    submitForm = e => {
+        e.preventDefault()
         this.props.handleSubmit(this.state)
         this.setState(this.initialState)
     }
